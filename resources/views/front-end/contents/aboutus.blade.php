@@ -1,6 +1,7 @@
 @extends('front-end.app')
 @section('content')
     <div class="w-full px-6 pb-10 flex" style="background-color: #fafafa;">
+        {{-- side menu & banner --}}
         <div class="w-1/6 pt-8">
             <div><img src="{{ asset('images/chesen-ad.png') }}" alt=""></div>
             <div>
@@ -9,16 +10,27 @@
                     <li class=" border border-gray-500 w-full p-3 hover:text-red-500 text-red-500 pl-5" style="border-top: none">
                         <a href="{{ route('aboutus') }}">Về chúng tôi</a>
                     </li>
-                    <li class=" border border-gray-500 w-full p-3 hover:text-red-500 pl-5" style="border-top: none">Hướng dẫn mua hàng</li>
-                    <li class=" border border-gray-500 w-full p-3 hover:text-red-500 pl-5" style="border-top: none">Chính sách vận chuyển</li>
-                    <li class=" border border-gray-500 w-full p-3 hover:text-red-500 pl-5" style="border-top: none">Phương thức thanh toán</li>
-                    <li class=" border border-gray-500 w-full p-3 hover:text-red-500 pl-5" style="border-top: none">Quy định đổi trả hàng</li>
-                    <li class=" border border-gray-500 w-full p-3 hover:text-red-500 pl-5" style="border-top: none">Chính sách bảo hành</li>
+                    <li class=" border border-gray-500 w-full p-3 hover:text-red-500 pl-5" style="border-top: none">
+                        <a href="{{ route('shoppingGuide') }}">Hướng dẫn mua hàng</a>
+                    </li>
+                    <li class=" border border-gray-500 w-full p-3 hover:text-red-500 pl-5" style="border-top: none">
+                        <a href="{{ route('shippingPolicy') }}">Chính sách vận chuyển</a>
+                    </li>
+                    <li class=" border border-gray-500 w-full p-3 hover:text-red-500 pl-5" style="border-top: none">
+                        <a href="{{ route('paymentMethod') }}">Phương thức thanh toán</a>
+                    </li>
+                    <li class=" border border-gray-500 w-full p-3 hover:text-red-500 pl-5" style="border-top: none">
+                        <a href="{{ route('refundRegulation') }}">Quy định đổi trả hàng</a>
+                    </li>
+                    <li class=" border border-gray-500 w-full p-3 hover:text-red-500 pl-5" style="border-top: none">
+                        <a href="{{ route('warrantyPolicy') }}">Chính sách bảo hành</a>
+                    </li>
                 </ul>
             </div>
         </div>
+        {{-- content --}}
         <div class="w-full  justify-around items-center pt-8 pl-7">
-            <div class=" font-semibold text-xl pb-3">Về chúng tôi</div>
+            <div class=" font-semibold text-xl pb-3">VỀ CHÚNG TÔI</div>
             <div class=" border-t-4 border border-gray-500 bg-white" style="border-top-color: red">
                 <div class="text-center font-semibold text-lg">
                     Xin kính chào và cảm ơn quý khách hành đã quan tâm và truy cập vào website:
@@ -135,7 +147,6 @@
         </div>
     </div>
     <div class="border-t-2 py-10">
-        
         <div class="splide">
             <div class="splide__track">
               <ul class="splide__list">
