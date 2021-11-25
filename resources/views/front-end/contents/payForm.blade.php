@@ -60,53 +60,7 @@
             <div class="cart_wrapper">
                 @include('front-end.components.cart_component')
             </div>
-
-            <div class="py-3 pl-4 lg:pl-10 mt-2 bg-gray-100 text-2xl text-black border-l-4 border-green-primary">
-                THÔNG TIN ĐẶT HÀNG
-            </div>
-            <div class="pl-6 lg:pl-10 pt-5 flex-col pb-4 lg:pb-10">
-                <div class="flex w-full">
-                    <div class="text-left pr-5">
-                        <input id="typePay0" checked type="radio" name="typePay" onclick="displayDetailTypePay()">
-                    </div>
-                    <div class="">Chuyển khoản ngân hàng</div>
-                </div>
-                <div id="radioDetail0" class="text full">
-                    Thực hiện thanh toán vào một trong các tài khoản ngân hàng bên cạnh của chúng tôi. Vui lòng sử dụng mã đơn hàng để thanh toán (VD: thanh toan don hang so 1234)
-                </div>
-                <div class="flex w-full">
-                    <div class="text-left pr-5">
-                        <input id="typePay1" type="radio" name="typePay" onclick="displayDetailTypePay()">
-                    </div>
-                    <div class="">Trả tiền khi nhận mặt hàng</div>
-                </div>
-                <div id="radioDetail1" class="text">
-                    Trả tiền mặt khi giao hàng
-                </div>
-            </div>
-
-            <button class="py-2 px-5 mb-2 items-center justify-center rounded-md bg-green-primary border-2 border-green-primary text-white hover:bg-white hover:text-green-primary" type="submit">
-                <a href="">Đặt hàng</a>
-            </button>
-            <div class="text-red-500 pt-3 pb-20">(Tư vấn viên sẽ gọi điện xác nhận, không mua không sao)</div>
         </div>
-        <script>
-            function displayDetailTypePay(){
-                var r0 = document.getElementById("typePay0");
-                var r1 = document.getElementById("typePay1");
-                var text0 = document.getElementById('radioDetail0');
-                var text1 = document.getElementById('radioDetail1');
-                if(r0.checked == true){
-                    text0.classList.add('full');
-                    text1.classList.remove('full');
-                }
-                if(r1.checked == true){
-                    text0.classList.remove('full');
-                    text1.classList.add('full');
-                }
-            }
-            
-        </script>
         <script>
             function cartUpdate(event){
                 event.preventDefault();
@@ -132,7 +86,7 @@
                         }
                     },
                     error: function(){
-
+                        alert("Cập nhật đơn hàng thất bại");
                     }
                 });
             };
@@ -156,7 +110,7 @@
                         }
                     },
                     error: function(){
-
+                        alert("Xóa đơn thất bại");
                     }
                 });
             }

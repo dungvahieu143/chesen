@@ -7,6 +7,7 @@ use App\Models\Product;
 use App\Models\BankAccount;
 use App\Models\Promotion;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class ProductClientController extends Controller
 {
@@ -23,14 +24,33 @@ class ProductClientController extends Controller
         if(isset($cart[$id])){
             $cart[$id]['quantity'] +=  $request->amount;
         } else{
-            $cart[$id] = [
-                'name' => $product->name,
-                'priceRoot' => $product->priceRoot,
-                'pricePromo' => $product->pricePromo,
-                'linkImg' => $product->linkImg,
-                'quantity' => $request->amount,
-                'promoID' => $product->promoID
-            ];
+            if($product->promoID != NULL){
+                $cart[$id] = [
+                    'name' => $product->name,
+                    'priceRoot' => $product->priceRoot,
+                    'pricePromo' => $product->pricePromo,
+                    'linkImg' => $product->linkImg,
+                    'quantity' => $request->amount,
+                    'promoID' => $product->promoID
+                ];
+                $endTime = Carbon::create($product->promotion->endTime);
+
+                $now = Carbon::now();
+    
+                if($now > $endTime){
+                    $cart[$id]['promoID'] = NULL;
+                }
+            }
+            else{
+                $cart[$id] = [
+                    'name' => $product->name,
+                    'priceRoot' => $product->priceRoot,
+                    'pricePromo' => $product->pricePromo,
+                    'linkImg' => $product->linkImg,
+                    'quantity' => $request->amount,
+                    'promoID' => $product->promoID
+                ];
+            }
         }
         session()->put('cart', $cart);
         $banks = BankAccount::limit(6)->get();
@@ -46,14 +66,33 @@ class ProductClientController extends Controller
         if(isset($cart[$id])){
             $cart[$id]['quantity'] +=  1;
         } else{
-            $cart[$id] = [
-                'name' => $product->name,
-                'priceRoot' => $product->priceRoot,
-                'pricePromo' => $product->pricePromo,
-                'linkImg' => $product->linkImg,
-                'quantity' => 1,
-                'promoID' => $product->promoID
-            ];
+            if($product->promoID != NULL){
+                $cart[$id] = [
+                    'name' => $product->name,
+                    'priceRoot' => $product->priceRoot,
+                    'pricePromo' => $product->pricePromo,
+                    'linkImg' => $product->linkImg,
+                    'quantity' => 1,
+                    'promoID' => $product->promoID
+                ];
+                $endTime = Carbon::create($product->promotion->endTime);
+    
+                $now = Carbon::now();
+    
+                if($now > $endTime){
+                    $cart[$id]['promoID'] = NULL;
+                }
+            }
+            else{
+                $cart[$id] = [
+                    'name' => $product->name,
+                    'priceRoot' => $product->priceRoot,
+                    'pricePromo' => $product->pricePromo,
+                    'linkImg' => $product->linkImg,
+                    'quantity' => 1,
+                    'promoID' => $product->promoID
+                ];
+            }
         }
         $count = 0;
         foreach ($cart as $c) {
