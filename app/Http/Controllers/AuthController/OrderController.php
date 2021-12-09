@@ -21,6 +21,7 @@ class OrderController extends Controller
         $orders = DB::table('orders')
             ->join('customer', 'customerID', '=', 'customer.id')
             ->select('idBanking', 'customer.name', 'customer.address', 'customer.phoneNumber', 'orders.id', 'orders.statusPay', 'orders.statusDeli', 'orders.typePay', 'orders.note', 'orders.created_at')
+            ->orderBy('orders.created_at', 'desc')
             ->orderBy('statusPay', 'asc')->latest()
             ->paginate(10);
 

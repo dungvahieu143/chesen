@@ -166,10 +166,10 @@
         <!--Advert Card-->
         <div class="bg-white border-transparent rounded-lg shadow-xl">
             <div class="bg-gradient-to-b from-gray-300 to-gray-100 uppercase text-gray-800 border-b-2 border-gray-300 rounded-tl-lg rounded-tr-lg p-2">
-                <h5 class="font-bold uppercase text-gray-600">Advert</h5>
+                <h5 class="font-bold uppercase text-gray-600">Nhạc trẻ</h5>
             </div>
             <div class="p-5 text-center">
-                <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7D52JJ&placement=wwwtailwindtoolboxcom" id="_carbonads_js"></script>
+                <iframe class="w-56 h-40" src="https://www.youtube.com/embed/rSXuM8GhmW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
         <!--/Advert Card-->
