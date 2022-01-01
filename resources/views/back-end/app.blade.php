@@ -10,7 +10,7 @@
     <meta name="keywords" content="keywords,here">
    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-    <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> <!--Replace with your tailwind.css once created-->
+    <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> <!--Replace with your tailwind.css once created-->
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"> <!--Totally optional : -->
     <script src="//cdn.ckeditor.com/4.16.2/full/ckeditor.js"></script>
     <script src="https://js.pusher.com/4.3/pusher.min.js"></script>
