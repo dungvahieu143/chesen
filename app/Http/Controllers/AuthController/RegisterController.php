@@ -15,10 +15,14 @@ class RegisterController extends Controller
     }
 
     public function login(){
+        if(Auth::check()){
+            return redirect()->back();
+        }
         return view('back-end.login');
     }
+    
     public function customerLogin(Request $request)
-    {
+    {        
         $request->validate([
             'username' => ['required'],
             'password' => ['required'],
