@@ -57,7 +57,10 @@ class AdminHomeController extends Controller
             $data[$month] = $orderCount[$index];
         }
         
-        $orderDetails = OrderDetail::select('quantity', 'price')->get();
+        $orderDetails = DB::table('orderdetail')
+        ->join('orders', 'orderID', '=', 'orders.id')
+        ->where('orders.statusPay', '=', 1)
+        ->select('quantity', 'price')->get();
         return view('back-end.contents.home', compact('products', 'orders', 'orderDetails', 'data', 'months', 'orderCount', 'productName', 'productN','productQty', 'productQ', 'colours'));        
     }
 }

@@ -39,14 +39,6 @@ Route::get('/news', [NewsController::class, 'index'])->name("news");
 
 Route::get('/shipping_policy', [PaymentMethodController::class, 'shippingPolicy'])->name("shippingPolicy");
 
-Route::get('/shopping_guide', function () {
-    return view('front-end.contents.shoppingGuide');
-})->name("shoppingGuide");
-
-Route::get('/refund_regulation', function () {
-    return view('front-end.contents.refundRegulation');
-})->name('refundRegulation');
-
 Route::get('/payment', [PaymentMethodController::class, 'payment'])->name('payment');
 
 Route::get('/contact', function () {
