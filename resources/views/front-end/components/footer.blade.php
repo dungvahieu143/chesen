@@ -53,7 +53,7 @@
                     <li class="mb-2">
                         <a href="#"
                             class="border-b border-solid border-transparent hover:border-yellow-500 hover:text-yellow-500">Liên
-                            hệ qua zalo</a>
+                            hệ qua Zalo: 0983.538.799</a>
                     </li>
                 </ul>
             </div>

@@ -37,41 +37,11 @@
                         </a>
                     </span>
                 </div>
-                <a class="flex justify-around items-center" href="/home"><img src="{{ asset('images/logo.jpg') }}" alt=""></a>
+                <a class="flex justify-around items-center" href="/home"><img src="{{ asset('images/logo.png') }}" alt=""></a>
                 <div>
                     <?php while(!feof($file)) {  echo fgets($file) ;  }  fclose($file); ?>
                 </div>
             </div>
-            <div class="hidden lg:block py-5 text-3xl">
-                Bách Diệp Trà
-            </div>
-            <ul class="hidden lg:flex">
-                <li class="px-10 py-3 border-2 border-gray-50 hover:border-green-primary_1">
-                    <a class="" href="{{ asset('images/front-end/aboutus/company-img(1).jpg') }}">
-                        <img src="{{ asset('images/front-end/aboutus/company-img(1).jpg') }}">
-                    </a>
-                </li>
-                <li class="px-10 py-3 border-2 border-gray-50 hover:border-green-primary_1">
-                    <a class="" href="{{ asset('images/front-end/aboutus/company-img(2).jpg') }}">
-                        <img src="{{ asset('images/front-end/aboutus/company-img(2).jpg') }}">
-                    </a>
-                </li>
-                <li class="px-10 py-3 border-2 border-gray-50 hover:border-green-primary_1">
-                    <a class="" href="{{ asset('images/front-end/aboutus/company-img(3).jpg') }}">
-                        <img src="{{ asset('images/front-end/aboutus/company-img(3).jpg') }}">
-                    </a>
-                </li>
-                <li class="px-10 py-3 border-2 border-gray-50 hover:border-green-primary_1">
-                    <a class="" href="{{ asset('images/front-end/aboutus/company-img(4).jpg') }}">
-                        <img src="{{ asset('images/front-end/aboutus/company-img(4).jpg') }}">
-                    </a>
-                </li>
-                <li class="px-10 py-3 border-2 border-gray-50 hover:border-green-primary_1">
-                    <a class="" href="{{ asset('images/front-end/aboutus/company-img(5).jpg') }}">
-                        <img src="{{ asset('images/front-end/aboutus/company-img(5).jpg') }}">
-                    </a>
-                </li>
-            </ul>
         </div>
     </div>
 @endsection
