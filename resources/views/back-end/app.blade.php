@@ -17,7 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js" integrity="sha256-xKeoJ50pzbUGkpQxDYHD7o7hxe0LaOGeguUidbq6vis=" crossorigin="anonymous"></script>
     <script>
-        Pusher.logToConsole = false;
+        Pusher.logToConsole = true;
         var pusher = new Pusher('f4bb259bb9530ce8d0cd', {
           cluster: 'ap1',
           forceTLS: true

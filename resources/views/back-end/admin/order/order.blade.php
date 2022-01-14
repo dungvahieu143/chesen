@@ -127,11 +127,5 @@
             @endforeach
         </table>
     </div>
-
-
 </div>
-@endsection
-@section('js')
-
-<script src="{{asset('back-end/admin/slider/index/index.js')}}"></script>
 @endsection

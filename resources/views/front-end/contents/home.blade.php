@@ -24,7 +24,7 @@
                             </button>
                         </div>
                     </div>
-                    <img src="{{ asset('images/front-end/home/slider/chesen-banner-3.png') }}" alt="">
+                    <img src="{{ asset('images/front-end/home/slider/abc.jpg') }}" alt="">
                 </li>
                 <li class="splide__slide">
                     <div class="absolute left-0 right-0 my-0 top-1/4 lg:top-1/3">

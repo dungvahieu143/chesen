@@ -16,7 +16,7 @@ class RegisterController extends Controller
 
     public function login(){
         if(Auth::check()){
-            return redirect()->back();
+            return redirect()->route('admin.home');
         }
         return view('back-end.login');
     }
