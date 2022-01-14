@@ -80,7 +80,11 @@
         Ảnh
         </label>
         <input type="file" value="{{old('linkImg')}}" name="linkImg" class="@error('linkImg') is-invalid @enderror w-full text-gray-700 px-3 py-2 border rounded">
-        <img style=" width: 300px;height: 200px;"  src="{{ asset('storage/admins').'/'.$admins->linkImg}}" alt="">
+        @if ($admins->linkImg)
+            <img style=" width: 300px;height: 200px;"  src="{{ asset('storage/admins').'/adminDefault.jpg'}}" alt="">
+        @else
+            <img style=" width: 300px;height: 200px;"  src="{{ asset('storage/admins').'/'.$admins->linkImg}}" alt="">
+        @endif
     </div>
 
     <div class="mb-6">
