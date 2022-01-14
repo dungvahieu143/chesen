@@ -15,7 +15,7 @@
                     <div class="absolute left-0 right-0 my-0 top-1/4 lg:top-1/3">
                         <div class="text-center text-white drop-shadow-2xl text-8xl font-petemoss"><i>Năng lượng từ thiên
                                 nhiên</i></div>
-                        <div class="text-center text-white text-2xl font-bold drop-shadow-2xl pt-5">Trà xanh đặc sản Hồ Tây
+                        <div class="text-center text-white text-2xl font-bold drop-shadow-2xl pt-5">Trà sen đặc sản Tây Hồ
                         </div>
                         <div class="flex items-center justify-center pt-5">
                             <button
@@ -24,13 +24,13 @@
                             </button>
                         </div>
                     </div>
-                    <img src="{{ asset('images/front-end/home/slider/abc.jpg') }}" alt="">
+                    <img src="{{ asset('images/front-end/home/slider/chesen-banner3.jpg') }}" alt="">
                 </li>
                 <li class="splide__slide">
                     <div class="absolute left-0 right-0 my-0 top-1/4 lg:top-1/3">
                         <div class="text-center text-white drop-shadow-2xl text-8xl font-petemoss"><i>Năng lượng từ thiên
                                 nhiên</i></div>
-                        <div class="text-center text-white text-2xl font-bold drop-shadow-2xl pt-5">Trà xanh đặc sản Hồ Tây
+                        <div class="text-center text-white text-2xl font-bold drop-shadow-2xl pt-5">Trà sen đặc sản Tây Hồ
                         </div>
                         <div class="flex items-center justify-center pt-5">
                             <button
@@ -45,7 +45,7 @@
                     <div class="absolute left-0 right-0 my-0 top-1/4 lg:top-1/3">
                         <div class="text-center text-black drop-shadow-2xl text-8xl font-petemoss"><i>Năng lượng từ thiên
                                 nhiên</i></div>
-                        <div class="text-center text-black text-2xl font-bold drop-shadow-2xl pt-5">Trà xanh đặc sản Hồ Tây
+                        <div class="text-center text-black text-2xl font-bold drop-shadow-2xl pt-5">Trà sen đặc sản Tây Hồ
                         </div>
                         <div class="flex items-center justify-center pt-5">
                             <button
@@ -60,7 +60,7 @@
                     <div class="absolute left-0 right-0 my-0 top-1/4 lg:top-1/3">
                         <div class="text-center text-white drop-shadow-2xl text-8xl font-petemoss"><i>Năng lượng từ thiên
                                 nhiên</i></div>
-                        <div class="text-center text-white text-2xl font-bold drop-shadow-2xl pt-5">Trà xanh đặc sản Hồ Tây
+                        <div class="text-center text-white text-2xl font-bold drop-shadow-2xl pt-5">Trà sen đặc sản Tây Hồ
                         </div>
                         <div class="flex items-center justify-center pt-5">
                             <button
@@ -177,22 +177,13 @@
             <div class="w-2/5">
                 <div class="text-2xl font-semibold text-green-primary pb-12 font-lora">TỪ NHỮNG MẦM TRÀ, CHÚNG TÔI TẠO RA
                     NIỀM ĐAM MÊ</div>
-                <p class="text-justify">Trải qua hơn 50 năm chắt chiu tinh hoa từ những búp trà xanh và hạt cà phê
-                    thượng hạng cùng mong
-                    muốn mang lại
-                    cho khách hàng những trải nghiệm giá trị nhất khi thưởng thức, Bách Diệp Trà liên tục là
-                    thương hiệu tiên phong
-                    với nhiều ý tưởng sáng tạo đi đầu trong ngành trà và cà phê.
+                <p class="text-justify">Với mong muốn được chia sẻ những câu chuyện buồn vui giản dị bên ấm trà nóng thơm nồng vị Sen Tây Hồ, chúng tôi tạo ra một món quà đậm sắc vị Hà Thành với Sen Tây Hồ kết hợp với Trà Thái Nguyên hảo hạng, để tạo thành một đặc phẩm Bách Diệp Trà Sen.
                 </p><br>
-                <p class="text-justify">Chúng tôi tin rằng từng sản phẩm trà và cà phê sẽ càng thêm hảo hạng khi
-                    được tạo ra từ sự
-                    phấn đấu không ngừng cùng niềm đam mê.
-                    Và chính kết nối dựa trên niềm tin, sự trung thực và tin yêu sẽ góp phần mang đến những nét đẹp trong
-                    văn hóa thưởng trà và cà phê ngày càng bay cao, vươn xa.
+                <p class="text-justify">Chúng tôi tin rằng Bách Diệp Trà Sen sẽ luôn gắn liên với những câu chuyện vui buồn của quý vị, và cũng là một hương phẩm mang đậm bản sắc Hà Nội, để cho những con người đã từng đến hoặc đi ở mảnh đất này sẽ luôn luôn mang theo bên mình.
                 </p>
                 <button
                     class="text-center border-2 rounded-lg border-green-primary bg-white text-green-primary hover:bg-green-primary hover:text-white px-5 py-1 mt-5">
-                    <a href="{{ route('aboutus') }}" class="font-bold text-xl">Xem thêm</a>
+                    <a href="{{ route('news') }}" class="font-bold text-xl">Xem thêm</a>
                 </button>
             </div>
         </div>

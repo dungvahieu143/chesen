@@ -19,22 +19,22 @@
                 </a>
             </form>
         </div>
-        <div class="hidden lg:flex"><img class="h-12" src="{{ asset('images/hotline1.png') }}" /></div>
+        <div class="hidden lg:flex"><img class="h-12" src="{{ asset('images/hotline1.jpg') }}" /></div>
         <div class="hidden lg:block text-black">
             <i class="text-3xl fas fa-shopping-cart text-green-primary"></i>
             <a href="{{ route('payment') }}" class="hover:text-green-primary_1">&nbsp;Giỏ hàng
                 <span id="cartQuantity"><?php
-$cart = session()->get('cart');
-if ($cart != null) {
-    $count = 0;
-    foreach ($cart as $c) {
-        $count += $c['quantity'];
-    }
-    echo '(' . $count . ')';
-} else {
-    echo '(0)';
-}
-?></span>
+                    $cart = session()->get('cart');
+                    if ($cart != null) {
+                        $count = 0;
+                        foreach ($cart as $c) {
+                            $count += $c['quantity'];
+                        }
+                        echo '(' . $count . ')';
+                    } else {
+                        echo '(0)';
+                    }
+                    ?></span>
             </a>
         </div>
         <div class="hidden lg:block text-black {{ request()->is('contact') ? 'cateActive' : '' }}">
@@ -128,31 +128,10 @@ if ($cart != null) {
         </div>
     </div>
 </div>
-<button class="lg:hidden" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <script>
     var btn = document.getElementById("mobile-menu-button");
     var menu = document.getElementById("menu");
     btn.onclick = function() {
         menu.classList.toggle("hidden");
     };
-
-    var mybutton = document.getElementById("myBtn");
-    window.onscroll = function() {
-        if (window.innerWidth < 1024) {
-            scrollFunction();
-        }
-    };
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    }
-
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
 </script>

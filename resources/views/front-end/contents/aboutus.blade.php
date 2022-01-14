@@ -7,23 +7,20 @@
             <div>
                 <div class=" font-bold text-lg py-5">Giới thiệu</div>
                 <ul>
-                    <li class=" border border-gray-500 w-full p-3 hover:text-green-primary text-green-primary pl-5" style="border-top: none">
-                        <a href="{{ route('aboutus') }}">Về chúng tôi</a>
+                    <li class=" border border-gray-500 w-full p-3 hover:text-green-primary pl-5" style="border-bottom: none">
+                        <a href="{{ route('productList') }}">Sản phẩm</a>
                     </li>
-                    <li class=" border border-gray-500 w-full p-3 hover:text-green-primary pl-5" style="border-top: none">
-                        <a href="{{ route('shoppingGuide') }}">Hướng dẫn mua hàng</a>
-                    </li>
-                    <li class=" border border-gray-500 w-full p-3 hover:text-green-primary pl-5" style="border-top: none">
-                        <a href="{{ route('shippingPolicy') }}">Chính sách vận chuyển</a>
+                    <li class=" border border-gray-500 w-full p-3 hover:text-green-primary pl-5">
+                        <a href="{{ route('news') }}">Tin tức khuyến mãi</a>
                     </li>
                     <li class=" border border-gray-500 w-full p-3 hover:text-green-primary pl-5" style="border-top: none">
                         <a href="{{ route('paymentMethod') }}">Phương thức thanh toán</a>
                     </li>
-                    <li class=" border border-gray-500 w-full p-3 hover:text-green-primary pl-5" style="border-top: none">
-                        <a href="{{ route('refundRegulation') }}">Quy định đổi trả hàng</a>
+                    <li class=" border border-gray-500 w-full p-3 hover:text-green-primary pl-5" style="border-top: none; border-bottom: none">
+                        <a href="{{ route('shippingPolicy') }}">Chính sách vận chuyển</a>
                     </li>
-                    <li class=" border border-gray-500 w-full p-3 hover:text-green-primary pl-5" style="border-top: none">
-                        <a href="{{ route('news') }}">Tin tức khuyến mãi</a>
+                    <li class=" border border-gray-500 w-full p-3 hover:text-green-primary pl-5 text-green-primary">
+                        <a href="{{ route('aboutus') }}">Về chúng tôi</a>
                     </li>
                 </ul>
             </div>
@@ -40,41 +37,11 @@
                         </a>
                     </span>
                 </div>
-                <a class="flex justify-around items-center" href="/home"><img src="{{ asset('images/logo.jpg') }}" alt=""></a>
+                <a class="flex justify-around items-center" href="/home"><img src="{{ asset('images/logo.png') }}" alt=""></a>
                 <div>
                     <?php while(!feof($file)) {  echo fgets($file) ;  }  fclose($file); ?>
                 </div>
             </div>
-            <div class="hidden lg:block py-5 text-3xl">
-                Bách Diệp Trà
-            </div>
-            <ul class="hidden lg:flex">
-                <li class="px-10 py-3 border-2 border-gray-50 hover:border-green-primary_1">
-                    <a class="" href="{{ asset('images/front-end/aboutus/company-img(1).jpg') }}">
-                        <img src="{{ asset('images/front-end/aboutus/company-img(1).jpg') }}">
-                    </a>
-                </li>
-                <li class="px-10 py-3 border-2 border-gray-50 hover:border-green-primary_1">
-                    <a class="" href="{{ asset('images/front-end/aboutus/company-img(2).jpg') }}">
-                        <img src="{{ asset('images/front-end/aboutus/company-img(2).jpg') }}">
-                    </a>
-                </li>
-                <li class="px-10 py-3 border-2 border-gray-50 hover:border-green-primary_1">
-                    <a class="" href="{{ asset('images/front-end/aboutus/company-img(3).jpg') }}">
-                        <img src="{{ asset('images/front-end/aboutus/company-img(3).jpg') }}">
-                    </a>
-                </li>
-                <li class="px-10 py-3 border-2 border-gray-50 hover:border-green-primary_1">
-                    <a class="" href="{{ asset('images/front-end/aboutus/company-img(4).jpg') }}">
-                        <img src="{{ asset('images/front-end/aboutus/company-img(4).jpg') }}">
-                    </a>
-                </li>
-                <li class="px-10 py-3 border-2 border-gray-50 hover:border-green-primary_1">
-                    <a class="" href="{{ asset('images/front-end/aboutus/company-img(5).jpg') }}">
-                        <img src="{{ asset('images/front-end/aboutus/company-img(5).jpg') }}">
-                    </a>
-                </li>
-            </ul>
         </div>
     </div>
 @endsection

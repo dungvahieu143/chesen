@@ -71,15 +71,21 @@ class ProductController extends Controller
         }
     }
     public function delete($id){
-        $n = $this->product->find($id);
-        
-        if($n->linkImg && $n->linkImg != 'chesen-banner-1.jpg')
-        {
-            Storage::delete('public/product/'.$n->linkImg);
+        try{
+            $n = $this->product->find($id);
+            $pathImg = $n->linkImg;
+            $n->delete();
+            if($pathImg && $pathImg != 'chesen-banner-1.jpg')
+            {
+                Storage::delete('public/product/'.$pathImg);
+            }
+            session()->flash('success', 'Bạn đã xóa thành công.');
+            return redirect()->route('product.index');
+        } catch(Exception $exception){
+            session()->flash('success', 'Sản phẩm đang thuộc đơn hàng không thể xóa');
+            return redirect()->route('product.index');
         }
-        $n->delete();
-        session()->flash('success', 'Bạn đã xóa thành công.');
-        return redirect()->route('product.index');
+        
     }
     public function edit($id){
         $products=$this->product->find($id);

@@ -18,7 +18,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="{{ asset('js/myScript.js') }}"></script>
     <script src="https://kit.fontawesome.com/732f1c5837.js" crossorigin="anonymous"></script>
-    <script src="https://sp.zalo.me/plugins/sdk.js"> </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
@@ -28,7 +27,18 @@
     @include('front-end.components.header')
     @yield('content')
     @include('front-end.components.footer')
-    <div class="hidden lg:block zalo-chat-widget" data-oaid="3227447948609774968" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="300" data-height="300"> </div> 
-    <div id="overlay" class="hidden"></div>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61de8c7df7cf527e84d1b37c/1fp6l9j59';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 </html>
