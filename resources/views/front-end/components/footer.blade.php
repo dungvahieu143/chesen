@@ -41,13 +41,13 @@
                 <ul class="list-none footer-links">
                     <li class="mb-2">
                         <a href="#"
-                            class="border-b border-solid border-transparent hover:border-yellow-500 hover:text-yellow-500">Tổng
-                            đài hỗ trợ</a>
+                            class="border-b border-solid border-transparent hover:border-yellow-500 hover:text-yellow-500">Hotline1:
+                            0983.538.799</a>
                     </li>
                     <li class="mb-2">
                         <a href="#"
-                            class="border-b border-solid border-transparent hover:border-yellow-500 hover:text-yellow-500">Hotline:
-                            0983.538.799</a>
+                            class="border-b border-solid border-transparent hover:border-yellow-500 hover:text-yellow-500">Hotline2:
+                            0942.309.818</a>
                     </li>
                     <li class="mb-2">
                         <a href="#"
@@ -74,7 +74,7 @@
                         class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-0.5 ml-2 text-white hover:text-white hover:bg-red-400 hover:border-red-400">
                         <i class="fab fa-youtube"></i>
                     </a>
-                    <a href=""
+                    <a href="#"
                         class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-0.5 ml-2 text-white hover:text-white hover:bg-red-600 hover:border-red-600">
                         <i class="fab fa-google-plus-g"></i>
                     </a>

@@ -10,7 +10,7 @@
            <div class="flex flex-1 md:w-1/3 justify-center md:justify-start text-white px-2">
                <span class="relative w-full">
                    <form id="searchIdBanking" method="POST" action="{{ route('order.search') }}">
-                       @csrf 
+                       @csrf
                        @method('POST')
                        <input type="search" placeholder="Search" name="search"
                            class="w-full bg-gray-900 text-white transition border border-transparent focus:outline-none focus:border-gray-400 rounded py-3 px-2 pl-10 appearance-none leading-normal">
@@ -45,9 +45,12 @@
                                    class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block"><i
                                        class="fa fa-user fa-fw"></i> Admin</a>
                                <div class="border border-gray-800"></div>
-                               <a href="{{ route('logout') }}"
-                                   class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block"><i
-                                       class="fas fa-sign-out-alt fa-fw"></i> Log Out</a>
+                               <form action="{{ route('logout') }}" method="POST">
+                                   @csrf
+                                   <button
+                                       class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block"><i
+                                           class="fas fa-sign-out-alt fa-fw"></i> Log Out</button>
+                               </form>
                            </div>
                        </div>
                    </li>

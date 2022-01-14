@@ -51,7 +51,7 @@
                                 <i>{{ $bank->bankNumber }}</i>
                             </span>
                         </div>
-                        <div class="text-gray-500">{{ $bank->department }}</div>
+                        <div class="text-gray-500">Chi nhánh: {{ $bank->department }}</div>
                     </div>
                     @endforeach
                 </div>

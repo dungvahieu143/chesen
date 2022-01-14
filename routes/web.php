@@ -71,7 +71,7 @@ Route::get('/login', [RegisterController::class, 'login'])->name('login');
 Route::post('/login', [RegisterController::class, 'customerLogin']);
 
 //logout
-Route::get('/logout', [RegisterController::class, 'logout'])->name('logout');
+Route::post('/logout', [RegisterController::class, 'logout'])->name('logout');
 
 Route::prefix('admin')->group(function () {
     //home

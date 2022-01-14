@@ -14,7 +14,7 @@
             <div class="text-center p-2">
                 Điện thoại:
                 <span  class="text-green-primary font-semibold">
-                    0983.538.799
+                    0983.538.799 <span class="text-black">hoặc</span> 0942.309.818
                 </span>
             </div>
             <div class="text-center p-2 pb-5">
