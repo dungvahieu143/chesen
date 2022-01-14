@@ -33,7 +33,7 @@
                     <img src="{{ asset('storage/new').'/'.$new->linkImg}}" alt="" class="w-20 h-20 lg:h-48 lg:w-48 lg:object-contain">
                 </div>
                 <div class="w-2/3 lg:pr-20">
-                    <div class="text-left lg:text-justify text-lg lg:text-xl font-bold font-lora">
+                    <div class="text-left lg:text-justify text-lg lg:text-xl font-bold text-green-primary_1">
                         <a href="/news/{{ $new->id }}">
                             {{ $new->title }}
                         </a>
@@ -68,7 +68,7 @@
                         <img src="{{ asset('storage/new').'/'.$latest_new->linkImg}}" alt="" class="w-20 h-20 lg:h-24 lg:w-24 object-contain">
                     </div>
                     <div class="w-2/3 pl-5">
-                        <div class="text-left text-sm font-bold font-lora">
+                        <div class="text-left text-sm font-bold text-green-primary_1">
                             <a href="/new/{{ $latest_new->id }}">
                                 {{ $latest_new->title }}
                             </a>

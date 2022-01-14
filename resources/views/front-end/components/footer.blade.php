@@ -49,7 +49,10 @@
                             class="border-b border-solid border-transparent hover:border-yellow-500 hover:text-yellow-500">Hotline:
                             0983.538.799</a>
                     </li>
-
+                    <li class="mb-2">
+                        <a href="#"
+                            class="border-b border-solid border-transparent hover:border-yellow-500 hover:text-yellow-500">Email: bachdieptrasen@gmail.com</a>
+                    </li>
                     <li class="mb-2">
                         <a href="#"
                             class="border-b border-solid border-transparent hover:border-yellow-500 hover:text-yellow-500">Liên
@@ -63,16 +66,16 @@
             <div class="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
                 <h5 class="text-xl font-bold mb-6 sm:text-center xl:text-left">Kênh truyền thông</h5>
                 <div class="flex sm:justify-center xl:justify-start">
-                    <a href=""
-                        class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 text-white hover:text-white hover:bg-blue-600 hover:border-blue-600">
+                    <a href="https://www.facebook.com/profile.php?id=100077337032292" target="blank"
+                        class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-0.5 text-white hover:text-white hover:bg-blue-600 hover:border-blue-600">
                         <i class="fab fa-facebook"></i>
                     </a>
-                    <a href=""
-                        class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-white hover:text-white hover:bg-blue-400 hover:border-blue-400">
-                        <i class="fab fa-twitter"></i>
+                    <a href="https://www.youtube.com/channel/UCRl6H_hiKQ-3oli2uK8hlUA" target="blank"
+                        class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-0.5 ml-2 text-white hover:text-white hover:bg-red-400 hover:border-red-400">
+                        <i class="fab fa-youtube"></i>
                     </a>
                     <a href=""
-                        class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-white hover:text-white hover:bg-red-600 hover:border-red-600">
+                        class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-0.5 ml-2 text-white hover:text-white hover:bg-red-600 hover:border-red-600">
                         <i class="fab fa-google-plus-g"></i>
                     </a>
                 </div>
