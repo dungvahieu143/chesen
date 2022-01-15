@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <meta property="og:type" content="image">
+	<meta property="og:title" content="Bách Diệp Trà Sen">
+	<meta property="og:url" content="www.bachdieptra.com">
+	<meta property="og:description" content="Với mong muốn được chia sẻ những câu chuyện buồn vui giản dị bên ấm trà nóng thơm nồng vị Sen Tây Hồ, chúng tôi tạo ra một món quà đậm sắc vị Hà Thành với Sen Tây Hồ kết hợp với Trà Thái Nguyên hảo hạng, để tạo thành một đặc phẩm Bách Diệp Trà Sen.">
+	<meta property="og:image" content="{{ asset('images/logo.png') }}">
+	<meta property="og:site_name" content="Bachdieptra">
+    <link rel="shortcut icon" href="{{ asset('images/icon.ico') }}" type="image/x-icon">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/myStyle.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">

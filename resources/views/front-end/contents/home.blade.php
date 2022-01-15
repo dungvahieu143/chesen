@@ -20,7 +20,7 @@
                         <div class="flex items-center justify-center pt-5">
                             <button
                                 class="text-center border rounded-3xl border-green-secondary bg-green-secondary hover:bg-green-secondary_1 hover:border-green-secondary_1 px-5 py-2">
-                                <a href="" class="font-bold text-xl text-white">Chi tiết sản phẩm</a>
+                                <a href="{{ route('productList') }}" class="font-bold text-xl text-white">Chi tiết sản phẩm</a>
                             </button>
                         </div>
                     </div>
