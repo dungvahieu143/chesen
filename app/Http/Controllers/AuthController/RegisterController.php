@@ -10,38 +10,37 @@ use Illuminate\Support\Facades\Auth;
 
 class RegisterController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         return view('back-end.auth.register');
     }
 
-    public function login(){
-        if(Auth::check()){
+    public function login()
+    {
+        if (Auth::check()) {
             return redirect()->route('admin.home');
         }
         return view('back-end.login');
     }
-    
+
     public function customerLogin(Request $request)
-    {        
+    {
         $request->validate([
             'username' => ['required'],
             'password' => ['required'],
         ]);
-        //dd(Auth::attempt($request->only('username', 'password')));
         if (Auth::attempt($request->only('username', 'password'), $request->remember)) {
             $request->session()->regenerate();
-
             return redirect()->route('admin.home');
         }
-
         return back()->withErrors([
             'username' => 'Sai tên đăng nhập hoặc mật khẩu',
         ]);
-        
     }
 
-    public function logout(){
+    public function logout()
+    {
         Auth::logout();
         return redirect()->route('login');
-   }
+    }
 }

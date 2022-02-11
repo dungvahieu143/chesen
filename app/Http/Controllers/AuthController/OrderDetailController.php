@@ -21,9 +21,9 @@ class OrderDetailController extends Controller
 
     public function index($orderId)
     {
-        $orderDetails =  DB::table('orderDetail')
+        $orderDetails =  DB::table('orderdetail')
             ->join('product', 'productID', '=', 'product.id')
-            ->select('orderID', 'product.name', 'orderDetail.price', 'orderDetail.quantity', 'orderDetail.productID')
+            ->select('orderID', 'product.name', 'orderdetail.price', 'orderdetail.quantity', 'orderdetail.productID')
             ->where('orderID', $orderId)
             ->get();
         $data = Orders::join('customer', 'customerID', '=', 'customer.id')
@@ -76,9 +76,9 @@ class OrderDetailController extends Controller
         }
         $detail->save();
         $orderId = $request->orderID;
-        $orderDetails =  DB::table('orderDetail')
+        $orderDetails =  DB::table('orderdetail')
             ->join('product', 'productID', '=', 'product.id')
-            ->select('orderID', 'product.name', 'orderDetail.price', 'orderDetail.quantity', 'orderDetail.productID')
+            ->select('orderID', 'product.name', 'orderdetail.price', 'orderdetail.quantity', 'orderdetail.productID')
             ->where('orderID', $orderId)
             ->get();
         $data = Orders::join('customer', 'customerID', '=', 'customer.id')
@@ -93,9 +93,9 @@ class OrderDetailController extends Controller
         $detail = OrderDetail::where('productID', '=', $id)->where('orderID', '=', $oID)->first();
         $detail->delete();
         session()->flash('success', 'Bạn đã xóa thành công.');
-        $orderDetails =  DB::table('orderDetail')
+        $orderDetails =  DB::table('orderdetail')
             ->join('product', 'productID', '=', 'product.id')
-            ->select('orderID', 'product.name', 'orderDetail.price', 'orderDetail.quantity', 'orderDetail.productID')
+            ->select('orderID', 'product.name', 'orderdetail.price', 'orderdetail.quantity', 'orderdetail.productID')
             ->where('orderID', $oID)
             ->get();
         $data = Orders::join('customer', 'customerID', '=', 'customer.id')
@@ -126,9 +126,9 @@ class OrderDetailController extends Controller
         $detail->quantity = $request->quantity;
         $detail->save();
         session()->flash('success', 'Bạn đã sửa thành công.');
-        $orderDetails =  DB::table('orderDetail')
+        $orderDetails =  DB::table('orderdetail')
             ->join('product', 'productID', '=', 'product.id')
-            ->select('orderID', 'product.name', 'orderDetail.price', 'orderDetail.quantity', 'orderDetail.productID')
+            ->select('orderID', 'product.name', 'orderdetail.price', 'orderdetail.quantity', 'orderdetail.productID')
             ->where('orderID', $orderId)
             ->get();
         $data = Orders::join('customer', 'customerID', '=', 'customer.id')
